@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun getData() {
 //        val withDays = SharedPreference(this).getValueInt(DAYS).toFloat()
         GlobalScope.launch {
@@ -157,7 +156,7 @@ class MainActivity : AppCompatActivity() {
 
 private fun generateCenterSpannableText(days: Long): SpannableString {
     val s = SpannableString("Days of all\n${days.toInt()}")
-    s.setSpan(RelativeSizeSpan(1.7f), 0, 14, 0)
-    s.setSpan(ForegroundColorSpan(Color.parseColor("#ffffff")), s.length - 14, s.length, 0)
+    s.setSpan(RelativeSizeSpan(1.7f), 0, 15, 0)
+    s.setSpan(ForegroundColorSpan(Color.parseColor("#ffffff")), s.length - 15, s.length, 0)
     return s
 }

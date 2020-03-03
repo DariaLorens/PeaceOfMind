@@ -10,6 +10,6 @@ data class Date(
 )
 
 data class Respons(
-    @Expose @SerializedName("date") val date: List<Date>,
-    @Expose @SerializedName("firstday") val firstday: Long
+    @Expose @SerializedName("date") val date: List<Date>
+//    @Expose @SerializedName("firstday") val firstday: Long
 )
